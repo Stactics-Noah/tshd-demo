@@ -203,7 +203,7 @@ MIT – do whatever you like, just keep the copyright notice.
 
 ### Author
 
-**Your Name** – [@yourhandle](https://github.com/yourhandle)
+**Noah Bouwhuis** – [@Stactics-Noah](https://github.com/Stactics-Noah/tshd-demo/)
 
 ---
 
