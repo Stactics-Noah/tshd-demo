@@ -11,7 +11,6 @@ from .forms import ChatForm
 # ------------  OPENAI v1 + AZURE SET-UP  ------------------------
 from openai import AzureOpenAI   # new in v1
 
-
 # Find this information in the Azure Portal: go to https://ai.azure.com/resource/deployments/ and click on your deployment
 client = AzureOpenAI(
     api_key="<your-azure-api-key>",                              # your key  🔑
