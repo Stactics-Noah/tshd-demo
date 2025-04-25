@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Django Chatbot Demo</title>
+    <link rel="stylesheet" href="{% static 'chat/styles.css' %}">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">🗨️ Django Chatbot Demo</h1>
+
+        <!-- Chat history -->
+        <section class="chat-box">
+            {% if history %}
+                {% for msg in history %}
+                    <div class="msg {{ msg.role }}">
+                        <span class="role">{{ msg.role|capfirst }}:</span>
+                        <span class="content">{{ msg.content }}</span>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="empty">Start the conversation!</p>
+            {% endif %}
+        </section>
+
+        <!-- Message input -->
+        <form method="post" class="chat-form">
+            {% csrf_token %}
+            {{ form.message }}
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>
