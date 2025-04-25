@@ -17,7 +17,7 @@ client = AzureOpenAI(
     azure_endpoint="<your-deployment-endpoint>",                 # your endpoint 🌐
     api_version="2024-12-01-preview",                            # same version you use in Portal
 )
-DEPLOYMENT_NAME = "gpt-35-turbo"   # the *deployment name* you set in the Portal
+DEPLOYMENT_NAME = "<deployment-name>"   # the *deployment name* you set in the Portal. NOT the model name!
 # ----------------------------------------------------------------
 
 def chat_view(request):
