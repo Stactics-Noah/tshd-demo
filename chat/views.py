@@ -46,3 +46,10 @@ def chat_view(request):
         form = ChatForm()
 
     return render(request, "chat/index.html", {"form": form, "history": history})
+
+def reset_chat(request):
+    """
+    Wipes the in-session chat history and returns the user to the main page.
+    """
+    request.session.pop("history", None)     # quietly remove the key if present
+    return redirect("chat:index")

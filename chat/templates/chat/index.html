@@ -30,6 +30,11 @@
             {{ form.message }}
             <button type="submit">Send</button>
         </form>
+        <!-- reset button -->
+        <form method="post" action="{% url 'chat:reset' %}" style="margin-top:0.5rem;">
+            {% csrf_token %}
+            <button type="submit" class="reset-btn">Reset chat</button>
+        </form>
     </main>
 </body>
 </html>
