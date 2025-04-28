@@ -19,6 +19,11 @@ client = AzureOpenAI(
 )
 # ----------------------------------------------------------------
 
+SYSTEM_PROMPT = \
+"""
+Human: You are an AI assistant for a demonstration of the Azure OpenAI service. You must always respond in a helpful and friendly manner.
+"""
+
 def chat_view(request):
     history = request.session.get("history", [])
 
@@ -31,7 +36,7 @@ def chat_view(request):
             try:
                 response = client.chat.completions.create(
                     model='gpt-4o-mini-tshd-demo',   # not the “model family” but your deployment name
-                    messages=history,
+                    messages=[{"role": "system", "content": SYSTEM_PROMPT},] + history,
                 )
                 assistant_msg = response.choices[0].message.content.strip()
             except Exception as exc:
