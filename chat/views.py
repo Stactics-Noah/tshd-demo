@@ -4,7 +4,7 @@ Very small view that:
   * Handles the user message and calls Azure OpenAI on POST
   * Stores the running conversation in the Django session
 """
-# import os
+import os
 from django.shortcuts import render, redirect
 from .forms import ChatForm
 
@@ -13,7 +13,7 @@ from openai import AzureOpenAI   # new in v1
 
 # Find this information in the Azure Portal: go to https://ai.azure.com/resource/deployments/ and click on your deployment
 client = AzureOpenAI(
-    api_key="<your-azure-api-key>",
+    api_key=os.environ["AZURE_OPENAI_KEY"],  # set in your environment
     azure_endpoint="https://noahb-m9wmmlqt-eastus2.cognitiveservices.azure.com/",
     api_version="2024-12-01-preview",
 )

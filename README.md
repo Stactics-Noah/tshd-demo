@@ -7,14 +7,18 @@ A minimal, self‑contained **Django 5** project that showcases how to build a 
 3. Create or navigate to folder where you want to put the project
 4. run `git clone git@github.com:Stactics-Noah/tshd-demo.git` to download the repo to this folder
 5. Open code editor of choice and open the folder tshd-demo (vscode recommended)
+
 6. Open command prompt in this folder (in the folder where ther epo is which is called tshd-demo)
 7. Create new virtual by running `venv python -m venv .venv`
 8. Activate the virtual env on windows by running `.venv\Scripts\activate` or activate the environment on mac an linux by running `source .venv/bin/activate`
-9. Install the requiremetns by running `pip install -r requirements.txt`
+9. Install the requirements by running `pip install -r requirements.txt`
+
+11. in the root of the project copy the `.env.example` file and rename it to `.env`, then change`<your-azure-api-key>` to the azure api key provided
 10. install mirgations for development server by running `python manage.py migrate`
-11. in the chat/views.py file change the `<your-azure-api-key>` to the azure api key provided
+
 12. run the development server by running `python manage.py runserver`
 13. Go to the development server by opening the browser and navigating to http://localhost:8000
+
 14. Change code in the function `chat_view` in the file `chat/views.py` and observe the changes in behavior
 ---
 
