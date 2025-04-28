@@ -1,3 +1,13 @@
+
+1. git installeren (https://git-scm.com/downloads)
+3. Create or navigate to folder where you want to put the project
+2. git clone git@github.com:Stactics-Noah/tshd-demo.git
+ 
+3. Open code editor of choice (vscode recommended)
+ 
+4. Open command prompt and navigate to tshd-demo folder cd tshd-demo 
+5. install mirgations for development server -> python manage.py migrate 
+
 # Django Chatbot Demo
 
 A minimal, self‑contained **Django 5** project that showcases how to build a server‑rendered chatbot interface without any JavaScript.  
