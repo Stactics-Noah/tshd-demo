@@ -9,7 +9,7 @@ A minimal, self‑contained **Django 5** project that showcases how to build a 
 5. Open code editor of choice and open the folder tshd-demo (vscode recommended)
 
 6. Open command prompt in this folder (in the folder where ther epo is which is called tshd-demo)
-7. Create new virtual by running `venv python -m venv .venv`
+7. Create new virtual by running `python -m venv .venv`
 8. Activate the virtual env on windows by running `.venv\Scripts\activate` or activate the environment on mac an linux by running `source .venv/bin/activate`
 9. Install the requirements by running `pip install -r requirements.txt`
 
