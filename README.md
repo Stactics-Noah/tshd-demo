@@ -5,7 +5,7 @@ A minimal, self‑contained **Django 5** project that showcases how to build a 
 1. Install python and make sure to add it to your path variable when installing: https://www.python.org/downloads/
 2. Install git and make sure to add it to your path variable when installing: https://git-scm.com/downloads
 3. Create or navigate to folder where you want to put the project
-4. run `git clone git@github.com:Stactics-Noah/tshd-demo.git` to download the repo to this folder
+4. run `git clone https://github.com/Stactics-Noah/tshd-demo` to download the repo to this folder
 5. Open code editor of choice and open the folder tshd-demo (vscode recommended)
 
 6. Open command prompt in this folder (in the folder where ther epo is which is called tshd-demo)
